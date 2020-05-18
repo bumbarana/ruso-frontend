@@ -1,0 +1,35 @@
+@import "../../../../assets/styles/variables.scss"; 
+
+
+.header {
+    position:sticky;
+    top:0;
+    z-index:50;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: $light-grey;
+    height: 16%;
+  }
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}  
+
+img{
+  width: 100%;
+}
+
+.tabs {
+  position:sticky;
+  top:0;
+  z-index:50;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $grey;
+  height: 6%;
+}
