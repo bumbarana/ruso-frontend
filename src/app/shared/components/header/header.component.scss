@@ -31,5 +31,28 @@ img{
   align-items: center;
   width: 100%;
   background: $grey;
-  height: 6%;
+  height: 7vh;
+  //text-align: center;
+}
+
+.list-horizontal {
+  width: 100%;
+}
+
+mat-nav-list.list-horizontal {
+  padding: 10%;
+  text-align: center;
+  .mat-list-item {
+    display: inline-block;
+    height: auto;
+    width: 20%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    color: $dark-blue;
+  }
+
+}
+ 
+.link{
+  padding: center;
 }

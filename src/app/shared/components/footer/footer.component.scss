@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/variables.scss"; 
+
+.footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: $grey;
+    justify-content: center;
+    height: auto;
+    color: white;
+    position: absolute;
+    //float:bootom;
+  }
+  
+.right{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 30%;
+}
+
+.center{
+    margin-left: 1%;
+    width: 30%;
+}
+
+.left{
+    margin-left: 10%;
+    width: 30%;
+}
+
+p{
+    color: $dark-blue;
+}
+
+.vl {
+    border-left: 3px solid #838584;
+    height: 15vh;
+  }

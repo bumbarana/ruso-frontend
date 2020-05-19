@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ruso-frontend": {
+    "OnlineSchool": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ruso-frontend",
+            "outputPath": "dist/OnlineSchool",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -62,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ruso-frontend:build"
+            "browserTarget": "OnlineSchool:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ruso-frontend:build:production"
+              "browserTarget": "OnlineSchool:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ruso-frontend:build"
+            "browserTarget": "OnlineSchool:build"
           }
         },
         "test": {
@@ -84,7 +83,6 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -108,7 +106,7 @@
         }
       }
     },
-    "ruso-frontend-e2e": {
+    "OnlineSchool-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ruso-frontend:serve"
+            "devServerTarget": "OnlineSchool:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ruso-frontend:serve:production"
+              "devServerTarget": "OnlineSchool:serve:production"
             }
           }
         },
@@ -137,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "ruso-frontend"
+  "defaultProject": "OnlineSchool"
 }
