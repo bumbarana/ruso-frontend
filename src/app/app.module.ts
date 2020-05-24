@@ -6,21 +6,20 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 import {
-  MatButtonModule, MatFormFieldModule, MatInputModule, MatChipsModule, MatAutocompleteModule, MatIconModule, MatSelectModule, MatDividerModule, MatCardModule, MatExpansionModule, MatNavList, MatListModule, MatRadioButton, MatRadioModule, MatCheckbox, MatCheckboxModule, MatProgressBar, MatProgressBarModule, MatToolbarModule
+  MatButtonModule, MatFormFieldModule, MatInputModule, MatChipsModule, MatAutocompleteModule, MatIconModule, MatSelectModule, MatDividerModule, MatCardModule, MatExpansionModule, MatNavList, MatListModule, MatRadioButton, MatRadioModule, MatCheckbox, MatCheckboxModule, MatProgressBar, MatProgressBarModule, MatToolbarModule, MatTabsModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { ProgramDescriptionComponent } from './components/program-description/program-description.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    DashboardCardComponent,
-    
+    ProgramDescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +45,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatProgressBarModule,
     MatCarouselModule,
     MatToolbarModule,
+    MatTabsModule
   ],
   exports: [
     SharedModule,

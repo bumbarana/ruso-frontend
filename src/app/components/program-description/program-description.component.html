@@ -1,0 +1,44 @@
+
+<app-header></app-header>
+<div class="body">
+<div class="header-replacer"></div>
+<br>
+
+<mat-card class="card">
+  <mat-card-header class="header">
+          <div class="title"> Discipline</div>
+        
+    </mat-card-header>
+    <mat-card-content class="content">
+      
+  
+  <mat-accordion class="headers-align">
+    <mat-tab-group>
+        <mat-tab *ngFor = "let s of semestre" label="Semestru {{s.numar}}">
+            <mat-accordion class="headers-align">
+                <mat-expansion-panel  *ngFor = "let d of s.disclipline">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title style="color: rgb(26, 78, 102)">
+                      {{d.nume}}
+                    </mat-panel-title>
+                    <!-- <mat-panel-description style="padding-left: 30px; color: rgb(62, 131, 163)">
+                      {{d.cod}}
+                    </mat-panel-description> -->
+                    <!-- <mat-panel-description>
+                      <b>descrierie:</b> 
+                    </mat-panel-description> -->
+                  </mat-expansion-panel-header>
+                <p style="color: rgb(26, 78, 102)">cod: {{d.cod}} </p>
+  
+        
+                </mat-expansion-panel>
+              </mat-accordion>
+           </mat-tab>
+  
+    </mat-tab-group>
+    </mat-accordion>
+  </mat-card-content>
+  </mat-card>
+  <br> <br>
+</div>
+  <app-footer></app-footer>

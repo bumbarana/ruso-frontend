@@ -9,7 +9,7 @@
    <div class="tabs">
       <button class = "button" mat-button [matMenuTriggerFor]="menuProgram"> Descrierea Programului</button> 
         <mat-menu #menuProgram="matMenu" yPosition="below">
-          <button class = "dropdown" mat-menu-item>Lista discipline</button> 
+          <button class = "dropdown" (click)=goToDiscipline() mat-menu-item>Lista discipline</button> 
           <button class = "dropdown" mat-menu-item>Info admitere/disertatie/doctorat</button>
           <button class = "dropdown" mat-menu-item>Regulamente </button>
           <button class = "dropdown" mat-menu-item>Info acreditare </button>
