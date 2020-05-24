@@ -1,25 +1,48 @@
 
 <div class="header">
-  <div class="logo">
-     <img src="../../../../assets/icons/logo.png" alt="logo">
+  <div class="logoHeader">
+    <div class="logo">
+      <img src="../../../../assets/icons/logo.jpeg" alt="logo">
+    </div>
   </div>
+  
+   <div class="tabs">
+      <button class = "button" mat-button [matMenuTriggerFor]="menuProgram"> Descrierea Programului</button> 
+        <mat-menu #menuProgram="matMenu" yPosition="below">
+          <button class = "dropdown" mat-menu-item>Lista discipline</button> 
+          <button class = "dropdown" mat-menu-item>Info admitere/disertatie/doctorat</button>
+          <button class = "dropdown" mat-menu-item>Regulamente </button>
+          <button class = "dropdown" mat-menu-item>Info acreditare </button>
+        </mat-menu>
+
+      <button class = "button" mat-button>Cadre Didactice</button>
+       
+      <button class = "button" mat-button [matMenuTriggerFor]="menuMediu">Mediul Muncii</button>
+        <mat-menu #menuMediu="matMenu" yPosition="below">
+          <button class = "dropdown" mat-menu-item>Oportunitati profesionale</button> 
+          <button class = "dropdown" mat-menu-item>Competente formate</button>
+          <button class = "dropdown" mat-menu-item>Info practica/parteneri</button>
+          <button class = "dropdown" mat-menu-item>Internshipuri</button>
+        </mat-menu>
+
+      <button class = "button" mat-button [matMenuTriggerFor]="menuStudenti">Studenti</button>
+        <mat-menu #menuStudenti="matMenu" yPosition="below">
+          <button class = "dropdown" mat-menu-item>Structura anului </button> 
+          <button class = "dropdown" mat-menu-item>Orar/Calendar examene</button>
+          <button class = "dropdown" mat-menu-item>Burse</button>
+          <button class = "dropdown" mat-menu-item>Taxe de scolarizare</button>
+          <button class = "dropdown" mat-menu-item>Date de contact </button>
+          <button class = "dropdown" mat-menu-item><a href="https://academicinfo.ubbcluj.ro/Info/">Link academicinfo</a></button>
+        </mat-menu>
+
+      <button class = "button" mat-button [matMenuTriggerFor]="menuCercetare">Cercetare</button>    
+       <mat-menu #menuCercetare="matMenu" yPosition="below">
+          <button class = "dropdown" mat-menu-item>Info centru</button> 
+          <button class = "dropdown" mat-menu-item>Burse de cercetare</button>
+          <button class = "dropdown" mat-menu-item>Publicatii</button>
+        </mat-menu>
+
+    </div> 
 </div>
-<div class="tabs">
-    <mat-nav-list class="list-horizontal" >
-        <mat-list-item class = "matlist">
-            <a  (click)="program()" class="link"><p>PROGRAM</p></a>
-        </mat-list-item>
-        <mat-list-item class = "matlist">
-            <a (click)="cadreDidactice()" class="link"> <p > CADRE DIDACTICE</p> </a>
-        </mat-list-item>
-        <mat-list-item class = "matlist">
-            <a (click)="medicinaMuncii()" class="link"> <p > MEDIUL MUNCII</p> </a>
-        </mat-list-item>
-        <mat-list-item class = "matlist">
-            <a (click)="studenti()" class="link"> <p > STUDENTI </p> </a>
-        </mat-list-item>
-        <mat-list-item class = "matlist">
-            <a (click)="cercetare()" class="link"> <p > CERCETARE </p> </a>
-        </mat-list-item>
-</mat-nav-list>
-</div>
+
+

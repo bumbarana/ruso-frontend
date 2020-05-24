@@ -1,16 +1,29 @@
 @import "../../../../assets/styles/variables.scss"; 
 
 
+
 .header {
-    position:sticky;
-    top:0;
-    z-index:50;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: $light-grey;
-    height: 16%;
+  position:fixed;
+  top:0;
+  z-index:50;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $light-grey;
+  height: 200px;
+  display: block;
+  
   }
+
+.logoHeader{
+  position:sticky;
+  top:0;
+  z-index:50;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: $light-grey;
+}  
 
 .logo{
     display: block;
@@ -30,29 +43,31 @@ img{
   display: flex;
   align-items: center;
   width: 100%;
-  background: $grey;
-  height: 7vh;
-  //text-align: center;
+  background-color: $dark-blue;
 }
 
-.list-horizontal {
-  width: 100%;
+.button{
+  color: white;
+  font-size: 25px;
 }
 
-mat-nav-list.list-horizontal {
-  padding: 10%;
-  text-align: center;
-  .mat-list-item {
-    display: inline-block;
-    height: auto;
-    width: 20%;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-weight: bold;
-    color: $dark-blue;
-  }
-
+button{
+  height: 60px;
+  width: 20%;
 }
- 
-.link{
-  padding: center;
+
+.dropdown{
+ float: right;
+ font-size: 17px;
+ background: $dark-blue;
+ color: white;
+}
+
+.dropdown:hover{
+  background: $dark-blue;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }

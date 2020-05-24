@@ -1,0 +1,40 @@
+@import "../../../assets/styles/variables.scss"; 
+
+.body{
+     background: $light-grey;
+}
+
+.header-replacer {
+    width: 100%;
+    background: $light-grey;
+    height: 130px;
+}
+
+main {
+    margin-top: 0;
+    flex: 100;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: $light-grey;
+}
+  
+.bigBigContainer{
+    box-shadow: 2px 2px 10px 10px #BDBDBD;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+  }
+
+.bigContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 150%;
+  }
+
+mat-card {
+margin-bottom: 4px;
+}
+
+.cardFont{
+    font-size:20px;
+}

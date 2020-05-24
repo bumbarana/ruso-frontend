@@ -1,39 +1,49 @@
 @import "../../../../assets/styles/variables.scss"; 
 
-.footer {
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: $grey;
-    justify-content: center;
-    height: auto;
+a {
     color: white;
-    position: absolute;
-    //float:bootom;
+    font-family: Lato;
   }
   
+mat-toolbar {
+    width: 100%;
+    min-width: 475px;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    background: $dark-blue;
+}
+
+  
 .right{
-    margin-left: 10%;
+    margin-left: 1%;
     margin-right: 10%;
     width: 30%;
+    font-size: 70%;
 }
 
 .center{
     margin-left: 1%;
     width: 30%;
+    font-size: 50%;
+
 }
 
 .left{
     margin-left: 10%;
     width: 30%;
+    font-size: 50%;
+
 }
 
 p{
-    color: $dark-blue;
+    color: $light-grey;
+   
 }
 
 .vl {
     border-left: 3px solid #838584;
-    height: 15vh;
+    height: 10vh;
+    position: relative;
   }

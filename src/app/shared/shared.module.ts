@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MatInputModule, MatButtonModule, MatCommonModule, MatDividerModule, MatListModule, MatNavList, MatMenuModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatCommonModule, MatDividerModule, MatListModule, MatNavList, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './components/header/header.component';
@@ -19,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ToastrModule.forRoot(),
     MatDividerModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule
   ],
   exports:[
     ToastrModule, HeaderComponent, FooterComponent
