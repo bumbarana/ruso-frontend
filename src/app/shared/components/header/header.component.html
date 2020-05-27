@@ -11,6 +11,7 @@
         <mat-menu #menuProgram="matMenu" yPosition="below">
           <button class = "dropdown" (click)=goToDiscipline() mat-menu-item>Lista discipline</button> 
           <button class = "dropdown" mat-menu-item>Info admitere/disertatie/doctorat</button>
+          <button class = "dropdown" (click)=goToInfoAbsolvireDizertatie() mat-menu-item>Info absolvire dizertatie</button>
           <button class = "dropdown" mat-menu-item>Regulamente </button>
           <button class = "dropdown" mat-menu-item>Info acreditare </button>
         </mat-menu>
@@ -19,7 +20,7 @@
        
       <button class = "button" mat-button [matMenuTriggerFor]="menuMediu">Mediul Muncii</button>
         <mat-menu #menuMediu="matMenu" yPosition="below">
-          <button class = "dropdown" mat-menu-item>Oportunitati profesionale</button> 
+          <button class = "dropdown" (click)=goToOportunitatiProfesionale() mat-menu-item>Oportunitati profesionale</button> 
           <button class = "dropdown" mat-menu-item>Competente formate</button>
           <button class = "dropdown" mat-menu-item>Info practica/parteneri</button>
           <button class = "dropdown" mat-menu-item>Internshipuri</button>

@@ -1,0 +1,99 @@
+<app-header></app-header>
+<div class="body">
+<div class="header-replacer"></div>
+
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-header class="header">
+                    <div class="title">Dizertatie</div>
+                  
+              </mat-card-header>
+              <br>
+              <br>
+              <mat-card-content class="content">
+                <p>Inscrierile pentru disertație sesiunea iulie 2020 se va face online in perioada 9-22.06.2020 ora 12.00</p>
+                  <mat-accordion class="headers-align">
+                    
+                      <mat-tab-group>
+                          <mat-tab label="Psihologie" style="font-size:20px;">
+                              <mat-accordion class="headers-align">
+                                <br>
+                                <b style="text-decoration:underline bold;">Specializarea/ linia de studiu:</b>
+                                <ul>
+                                  <li>Psihologie clinica, consiliere psihologica si psihoterapie LR</li>
+                                  <br>
+                                  <li>Tehnici psihologice pentru controlul comportamentului si dezvoltarea potentialului uman LR</li>
+                                  <br>
+                                  <li>Psihologie judiciara LR</li>
+                                  <br>
+                                  <li>Psihologia sanatatii publice si clinica LR</li>
+                                  <br>
+                                  <li>Consiliere si interventie psihologica in dezvoltarea umana LR</li>
+                                  <br>
+                                  <li>Psihologia resurselor umane si sanatate organizationala LR </li>
+                                  <br>
+                                  <li>Consultanta si interventie psihologica LM</li>
+                                  <br>
+                                  <li>Psihologie aplicata in organizatii complexe LM</li>
+                                </ul>
+                                </mat-accordion>
+                             </mat-tab>
+                    
+    
+                          <mat-tab label="Stiinte ale Educatiei">
+                              <mat-accordion class="headers-align">
+                                <br>
+                                  <b style="text-decoration:underline bold;">Specializarea/ linia de studiu:</b>
+                                  <ul>
+                                      <li>Management, consiliere si asistenta psihopedagogica in institutiile incluzive LR</li>
+                                      <br>
+                                      <li>Terapia limbajului si audiologie educationala LR</li>
+                                      <br>
+                                      <li>Consiliere scolara si asistenta psihopedagogica LR</li>
+                                      <br>
+                                      <li>Designer instructional LR</li>
+                                      <br>
+                                      <li>Management curricular LR</li>
+                                      <br>
+                                      <li>Metode si practici alternative în învătământul primar si prescolar LM </li>
+                                      <br>
+                                      <li>Strategii de învățare eficientă LM (Odorheiu Secuiesc)</li>
+                                      <br>
+                                      <li>Didactica limbii si literaturii germane, cultura si civilizatia germana a Europei Centrale si de Sud-Est LG</li>
+                                    </ul>
+                                </mat-accordion>
+                             </mat-tab>
+                    
+                      </mat-tab-group>
+
+                   
+                      </mat-accordion>
+            </mat-card-content>
+            </mat-card>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="card">
+            <mat-card-header class="header">
+                    <div class="title">Acte necesare</div>
+                  
+              </mat-card-header>
+              <mat-card-content>
+                <div class="content2">
+                <br>
+                <ul *ngFor = "let act of this.acte">
+                  <li>{{act}}</li>
+                  
+                </ul>
+                <br>
+                </div>
+            </mat-card-content>
+            </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
+  <app-footer class="footer"></app-footer>
+</div>
+

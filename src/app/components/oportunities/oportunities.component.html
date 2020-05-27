@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="body">
+<div class="header-replacer"></div>
+<br>
+
+<mat-card class="card">
+  <mat-card-header class="header">
+          <div class="title">Oportunităţi profesionale</div>
+        
+    </mat-card-header>
+    <mat-card-content>
+      <div class="content">
+      <br>
+      <ul *ngFor = "let o of oportunitati">
+        <li>{{o}}</li>
+        <br>
+      </ul>
+      <br>
+      <br>
+      <br>
+      </div>
+  </mat-card-content>
+  </mat-card>
+  <br> <br>
+  <app-footer class="footer"></app-footer>
+</div>
+

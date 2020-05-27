@@ -6,20 +6,24 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 import {
-  MatButtonModule, MatFormFieldModule, MatInputModule, MatChipsModule, MatAutocompleteModule, MatIconModule, MatSelectModule, MatDividerModule, MatCardModule, MatExpansionModule, MatNavList, MatListModule, MatRadioButton, MatRadioModule, MatCheckbox, MatCheckboxModule, MatProgressBar, MatProgressBarModule, MatToolbarModule, MatTabsModule
+  MatButtonModule, MatFormFieldModule, MatInputModule, MatChipsModule, MatAutocompleteModule, MatIconModule, MatSelectModule, MatDividerModule, MatCardModule, MatExpansionModule, MatNavList, MatListModule, MatRadioButton, MatRadioModule, MatCheckbox, MatCheckboxModule, MatProgressBar, MatProgressBarModule, MatToolbarModule, MatTabsModule, MatGridListModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ProgramDescriptionComponent } from './components/program-description/program-description.component';
+import { OportunitiesComponent } from './components/oportunities/oportunities.component';
+import { GraduationComponent } from './components/graduation/graduation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    ProgramDescriptionComponent
+    ProgramDescriptionComponent,
+    OportunitiesComponent,
+    GraduationComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,8 @@ import { ProgramDescriptionComponent } from './components/program-description/pr
     MatProgressBarModule,
     MatCarouselModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatGridListModule
   ],
   exports: [
     SharedModule,
