@@ -22,7 +22,7 @@ const routes: Routes = [
     component: ProgramDescriptionComponent
   },
   {
-    path:'infoAbsolvireDizertatie',
+    path:'infoAbsolvireDisertatie',
     component: GraduationComponent
   },
   {

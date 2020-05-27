@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   }
 
   goToInfoAbsolvireDizertatie() {
-    this.router.navigate(["/infoAbsolvireDizertatie"]);
+    this.router.navigate(["/infoAbsolvireDisertatie"]);
   }
 
   goToOportunitatiProfesionale(){
