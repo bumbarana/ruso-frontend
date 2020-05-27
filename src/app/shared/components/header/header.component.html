@@ -2,7 +2,7 @@
 <div class="header">
   <div class="logoHeader">
     <div class="logo">
-      <img src="../../../../assets/icons/logo.jpeg" alt="logo">
+        <a href="/dashboard"><img src="../../../../assets/icons/logo.jpeg" alt="logo"></a>
     </div>
   </div>
   
@@ -10,7 +10,7 @@
       <button class = "button" mat-button [matMenuTriggerFor]="menuProgram"> Descrierea Programului</button> 
         <mat-menu #menuProgram="matMenu" yPosition="below">
           <button class = "dropdown" (click)=goToDiscipline() mat-menu-item>Lista discipline</button> 
-          <button class = "dropdown" mat-menu-item>Info admitere/disertatie/doctorat</button>
+          <button class = "dropdown" (click)=goToCalendar() mat-menu-item>Info admitere/disertatie/doctorat</button>
           <button class = "dropdown" (click)=goToInfoAbsolvireDizertatie() mat-menu-item>Info absolvire disertatie</button>
           <button class = "dropdown" mat-menu-item>Regulamente </button>
           <button class = "dropdown" mat-menu-item>Info acreditare </button>

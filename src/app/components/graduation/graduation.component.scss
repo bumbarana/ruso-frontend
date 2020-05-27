@@ -47,15 +47,6 @@ color: $dark-blue;
 
 }
 
-
-
-// .nocases {
-//     font-size: 14px;
-//     color:rgba(0,0,0,0.6);
-//     padding: 15%;
-//     margin-left: 100;
-// }
-
 .headers-align .mat-expansion-panel-header-title,
 .example-headers-align .mat-expansion-panel-header-description .mat-card-title {
 flex-basis: 0;
@@ -89,4 +80,8 @@ mat-grid-list{
 .content{
     font-size:20px;
     color: $dark-blue;
+}
+
+a{
+    color:rgb(2, 62, 204);
 }

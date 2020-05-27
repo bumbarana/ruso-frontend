@@ -1,4 +1,4 @@
 export class CalendarAdmitere {
     sesiune: string;
-    detalii: string;
+    detalii: string[] = [];
 }

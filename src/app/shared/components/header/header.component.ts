@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(["/infoAbsolvireDisertatie"]);
   }
 
+  goToCalendar(){
+    this.router.navigate(["/infoAdmitere"]);
+  }
+ 
   goToOportunitatiProfesionale(){
     this.router.navigate(["/oportunitatiProfesionale"]);
   }

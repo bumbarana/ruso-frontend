@@ -20,9 +20,11 @@ main {
   
 .bigBigContainer{
     box-shadow: 2px 2px 10px 10px #BDBDBD;
-    margin-top: 10%;
+    //margin-top: 10%;
     margin-bottom: 5%;
     background-color: white;
+    border-radius: 1%; 
+
   }
 
 .bigContainer{
@@ -37,4 +39,17 @@ mat-card {
 
 .cardFont{
     font-size:20px;
+}
+
+.anunturi{
+  text-indent: 5%;
+  box-shadow: 2px 2px 10px 10px #BDBDBD;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: 13px;
+  border-radius: 20%; 
+}
+
+a{
+  color:$dark-blue;
 }

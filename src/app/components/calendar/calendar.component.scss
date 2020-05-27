@@ -41,11 +41,9 @@
 .content {
     //margin-top: 15px;
     //height: auto;
-    font-size: 140%;
+    font-size: 100%;
     color:$dark-blue;
 }
-
-// .footer{
-//     position: absolute;
-//     bottom: 0;
-//   }
+.mat-card-title {
+    font-size: 180px;
+}

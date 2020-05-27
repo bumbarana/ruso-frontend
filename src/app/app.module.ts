@@ -15,6 +15,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ProgramDescriptionComponent } from './components/program-description/program-description.component';
 import { OportunitiesComponent } from './components/oportunities/oportunities.component';
 import { GraduationComponent } from './components/graduation/graduation.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GraduationComponent } from './components/graduation/graduation.componen
     DashboardComponent,
     ProgramDescriptionComponent,
     OportunitiesComponent,
-    GraduationComponent
+    GraduationComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
