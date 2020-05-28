@@ -28,4 +28,8 @@ export class HeaderComponent implements OnInit {
   goToOportunitatiProfesionale(){
     this.router.navigate(["/oportunitatiProfesionale"]);
   }
+
+  goToRegulamente() {
+    this.router.navigate(["/regulamente"]);
+  }
 }

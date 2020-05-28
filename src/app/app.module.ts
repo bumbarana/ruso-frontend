@@ -16,6 +16,7 @@ import { ProgramDescriptionComponent } from './components/program-description/pr
 import { OportunitiesComponent } from './components/oportunities/oportunities.component';
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { RegulamenteComponent } from './components/regulamente/regulamente.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     ProgramDescriptionComponent,
     OportunitiesComponent,
     GraduationComponent,
-    CalendarComponent
+    CalendarComponent,
+    RegulamenteComponent
   ],
   imports: [
     BrowserModule,

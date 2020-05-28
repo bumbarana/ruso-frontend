@@ -5,6 +5,7 @@ import { ProgramDescriptionComponent } from './components/program-description/pr
 import { OportunitiesComponent } from './components/oportunities/oportunities.component';
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { RegulamenteComponent } from './components/regulamente/regulamente.component';
 
 
 
@@ -34,6 +35,10 @@ const routes: Routes = [
     path:'oportunitatiProfesionale',
     component: OportunitiesComponent
   },
+  {
+    path:'regulamente',
+    component: RegulamenteComponent
+  }
 ];
 
 @NgModule({
