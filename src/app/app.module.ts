@@ -17,6 +17,7 @@ import { OportunitiesComponent } from './components/oportunities/oportunities.co
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { RegulamenteComponent } from './components/regulamente/regulamente.component';
+import { BurseComponent } from './components/burse/burse.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { RegulamenteComponent } from './components/regulamente/regulamente.compo
     OportunitiesComponent,
     GraduationComponent,
     CalendarComponent,
-    RegulamenteComponent
+    RegulamenteComponent,
+    BurseComponent
   ],
   imports: [
     BrowserModule,

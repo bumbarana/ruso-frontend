@@ -6,6 +6,7 @@ import { OportunitiesComponent } from './components/oportunities/oportunities.co
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { RegulamenteComponent } from './components/regulamente/regulamente.component';
+import { BurseComponent } from './components/burse/burse.component';
 
 
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path:'regulamente',
     component: RegulamenteComponent
+  }, 
+  {
+    path:'burse',
+    component: BurseComponent
   }
 ];
 
