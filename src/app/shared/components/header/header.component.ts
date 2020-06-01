@@ -32,4 +32,11 @@ export class HeaderComponent implements OnInit {
   goToRegulamente() {
     this.router.navigate(["/regulamente"]);
   }
+  goToDateContact() {
+    this.router.navigate(["/contact"]);
+  }
+
+  goToOrar() {
+    this.router.navigate(["/orar"]);
+  }
 }

@@ -17,6 +17,8 @@ import { OportunitiesComponent } from './components/oportunities/oportunities.co
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { RegulamenteComponent } from './components/regulamente/regulamente.component';
+import { DateContactComponent } from './components/date-contact/date-contact.component';
+import { OrarComponent } from './components/orar/orar.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { RegulamenteComponent } from './components/regulamente/regulamente.compo
     OportunitiesComponent,
     GraduationComponent,
     CalendarComponent,
-    RegulamenteComponent
+    RegulamenteComponent,
+    DateContactComponent,
+    OrarComponent
   ],
   imports: [
     BrowserModule,

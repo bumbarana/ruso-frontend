@@ -6,8 +6,8 @@ import { OportunitiesComponent } from './components/oportunities/oportunities.co
 import { GraduationComponent } from './components/graduation/graduation.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { RegulamenteComponent } from './components/regulamente/regulamente.component';
-
-
+import { DateContactComponent } from './components/date-contact/date-contact.component';
+import { OrarComponent } from './components/orar/orar.component'
 
 const routes: Routes = [
   {
@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path:'regulamente',
     component: RegulamenteComponent
+  },
+  {
+    path:'contact',
+    component: DateContactComponent
+  },
+  {
+    path:'orar',
+    component: OrarComponent
   }
 ];
 
