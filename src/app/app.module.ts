@@ -20,6 +20,7 @@ import { RegulamenteComponent } from './components/regulamente/regulamente.compo
 import { DateContactComponent } from './components/date-contact/date-contact.component';
 import { OrarComponent } from './components/orar/orar.component';
 import { BurseComponent } from './components/burse/burse.component';
+import { TaxeComponent } from './components/taxe/taxe.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { BurseComponent } from './components/burse/burse.component';
     RegulamenteComponent,
     DateContactComponent,
     OrarComponent,
-    BurseComponent
+    BurseComponent,
+    TaxeComponent
   ],
   imports: [
     BrowserModule,
