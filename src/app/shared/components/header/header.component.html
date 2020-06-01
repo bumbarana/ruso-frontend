@@ -30,7 +30,7 @@
         <mat-menu #menuStudenti="matMenu" yPosition="below">
           <button class = "dropdown" mat-menu-item><a href="https://psiedu.ubbcluj.ro/data/uploads/doc/structura-an-universitar/structura_anului_2019-2020_ro-final.pdf"></a>Structura anului </button> 
           <button class = "dropdown" (click)=goToOrar() mat-menu-item>Orar/Calendar examene</button>
-          <button class = "dropdown" mat-menu-item>Burse</button>
+          <button class = "dropdown" (click)=goToBurse() mat-menu-item>Burse</button>
           <button class = "dropdown" mat-menu-item>Taxe de scolarizare</button>
           <button class = "dropdown" (click)=goToDateContact() mat-menu-item>Date de contact </button>
           <button class = "dropdown" mat-menu-item><a href="https://academicinfo.ubbcluj.ro/Info/">Link academicinfo</a></button>

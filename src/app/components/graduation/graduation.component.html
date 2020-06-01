@@ -85,7 +85,7 @@
                 <ul *ngFor = "let act of this.acte">
                   
                   <li  *ngIf= "act.model == ''">{{act.nume}}</li>
-                  <li  *ngIf= "act.model != ''">{{act.nume}} <a href="act.linkModel">{{act.model}}</a> </li>
+                  <li  *ngIf= "act.model != ''">{{act.nume}} <a href="{{act.linkModel}}">{{act.model}}</a> </li>
                   
                 </ul>
                 <br>

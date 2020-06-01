@@ -39,4 +39,7 @@ export class HeaderComponent implements OnInit {
   goToOrar() {
     this.router.navigate(["/orar"]);
   }
+  goToBurse() {
+    this.router.navigate(["/burse"]);
+  }
 }

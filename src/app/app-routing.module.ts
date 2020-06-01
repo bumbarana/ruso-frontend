@@ -8,6 +8,9 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { RegulamenteComponent } from './components/regulamente/regulamente.component';
 import { DateContactComponent } from './components/date-contact/date-contact.component';
 import { OrarComponent } from './components/orar/orar.component'
+import { BurseComponent } from './components/burse/burse.component';
+
+
 
 const routes: Routes = [
   {
@@ -46,6 +49,10 @@ const routes: Routes = [
   {
     path:'orar',
     component: OrarComponent
+  }, 
+  {
+    path:'burse',
+    component: BurseComponent
   }
 ];
 
