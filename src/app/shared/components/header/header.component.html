@@ -7,23 +7,24 @@
   </div>
   
    <div class="tabs">
-      <button class = "button" mat-button [matMenuTriggerFor]="menuProgram"> Descrierea Programului</button> 
+      <!-- <button class = "button" mat-button>Cadre Didactice</button> -->
+      <button style ="margin-left: 100px;" class = "button" mat-button [matMenuTriggerFor]="menuProgram"> Descrierea Programului</button> 
         <mat-menu #menuProgram="matMenu" yPosition="below">
           <button class = "dropdown" (click)=goToDiscipline() mat-menu-item>Lista discipline</button> 
           <button class = "dropdown" (click)=goToCalendar() mat-menu-item>Info admitere/disertatie/doctorat</button>
           <button class = "dropdown" (click)=goToInfoAbsolvireDizertatie() mat-menu-item>Info absolvire disertatie</button>
           <button class = "dropdown" (click)=goToRegulamente() mat-menu-item>Regulamente </button>
-          <button class = "dropdown" mat-menu-item>Info acreditare </button>
+          <!-- <button class = "dropdown" mat-menu-item>Info acreditare </button> -->
         </mat-menu>
-
-      <button class = "button" mat-button>Cadre Didactice</button>
+<!-- 
+      <button class = "button" mat-button>Cadre Didactice</button> -->
        
       <button class = "button" mat-button [matMenuTriggerFor]="menuMediu">Mediul Muncii</button>
         <mat-menu #menuMediu="matMenu" yPosition="below">
           <button class = "dropdown" (click)=goToOportunitatiProfesionale() mat-menu-item>Oportunitati profesionale</button> 
-          <button class = "dropdown" mat-menu-item>Competente formate</button>
-          <button class = "dropdown" mat-menu-item>Info practica/parteneri</button>
-          <button class = "dropdown" mat-menu-item>Internshipuri</button>
+          <button class = "dropdown" (click)=goToCompetente() mat-menu-item>Competente formate</button>
+          <button class = "dropdown" (click)=goToInternship() mat-menu-item>Info practica/parteneri</button>
+          <!-- <button class = "dropdown" mat-menu-item>Internshipuri</button> -->
         </mat-menu>
 
       <button class = "button" mat-button [matMenuTriggerFor]="menuStudenti">Studenti</button>
@@ -36,12 +37,12 @@
           <button class = "dropdown" mat-menu-item><a href="https://academicinfo.ubbcluj.ro/Info/">Link academicinfo</a></button>
         </mat-menu>
 
-      <button class = "button" mat-button [matMenuTriggerFor]="menuCercetare">Cercetare</button>    
+      <!-- <button class = "button" mat-button [matMenuTriggerFor]="menuCercetare">Cercetare</button>    
        <mat-menu #menuCercetare="matMenu" yPosition="below">
           <button class = "dropdown" mat-menu-item>Info centru</button> 
           <button class = "dropdown" mat-menu-item>Burse de cercetare</button>
           <button class = "dropdown" mat-menu-item>Publicatii</button>
-        </mat-menu>
+        </mat-menu> -->
 
     </div> 
 </div>

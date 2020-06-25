@@ -47,4 +47,12 @@ export class HeaderComponent implements OnInit {
   goToTaxe() {
     this.router.navigate(["/taxe"]);
   }
+
+  goToCompetente() {
+    this.router.navigate(["/competente"]);
+  }
+
+  goToInternship() {
+    this.router.navigate(["/internship"]);
+  }
 }

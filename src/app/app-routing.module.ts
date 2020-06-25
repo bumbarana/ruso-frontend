@@ -10,6 +10,8 @@ import { DateContactComponent } from './components/date-contact/date-contact.com
 import { OrarComponent } from './components/orar/orar.component'
 import { BurseComponent } from './components/burse/burse.component';
 import { TaxeComponent } from './components/taxe/taxe.component';
+import { CompetenteComponent } from './components/competente/competente.component';
+import { InternshipComponent } from './components/internship/internship.component';
 
 
 
@@ -58,6 +60,14 @@ const routes: Routes = [
   {
     path:'taxe',
     component: TaxeComponent
+  },
+  {
+    path:'competente',
+    component: CompetenteComponent
+  },
+  {
+    path:'internship',
+    component: InternshipComponent
   }
 ];
 
